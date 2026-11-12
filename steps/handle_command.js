@@ -1,6 +1,3 @@
-// Pipedream step: handle_command (Node.js)
-// Replies to bot commands and stops the workflow so the AI step does not also answer.
-// The Telegram Bot API account is connected in Pipedream (no token is stored in this file).
 import { axios } from "@pipedream/platform";
 
 export default defineComponent({
@@ -21,6 +18,8 @@ export default defineComponent({
         "Hello! I am your personal AI assistant. I can answer questions, summarize text, translate messages, and help you brainstorm ideas. Type /help to see all available commands.",
       "/help":
         "I can help you with:\n- Answering questions\n- Summarizing text\n- Translating messages\n- Brainstorming ideas\nUse /features to see all features, /reset to clear our conversation, and /feedback to share your thoughts.",
+      "/features":
+        "Here is what I can do for you:\n- Explain AI, technology and innovation topics in simple language\n- Help you brainstorm ideas for projects and creative stories\n- Summarize or translate short texts\n- Use /reset to restart the conversation\n- Use /feedback to help me improve\nRemember: AI can make mistakes, so always check important answers and never share personal details.",
       "/reset":
         "Conversation reset. Send me a new message to start fresh.",
     };
