@@ -21,7 +21,7 @@ feedback - Leave feedback
 | `/start` | Done | Welcome message |
 | `/help` | Done | Short list of what the bot can do |
 | `/reset` | Done (message only) | Confirms a fresh start. The bot does not store conversation history yet, so there is nothing to clear. |
-| `/features` | Planned | Currently replies "This command is not available yet." |
+| `/features` | Done | Currently replies "This command is not available yet." |
 | `/feedback` | Planned | Currently replies "This command is not available yet." (Google Sheets logging is planned) |
 
 Any other message is sent to the AI model and the answer is returned to the user.
